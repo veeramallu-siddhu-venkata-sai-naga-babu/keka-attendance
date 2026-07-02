@@ -1,0 +1,4 @@
+node_modules/
+failure-screenshot.png
+.env
+.DS_Store

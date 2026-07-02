@@ -1,0 +1,27 @@
+name: Keepalive
+
+# GitHub disables scheduled workflows after 60 days of no repository activity.
+# This workflow runs every 45 days and creates an empty commit to keep
+# the clock-in/clock-out schedules alive.
+
+on:
+  schedule:
+    - cron: "0 6 */45 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create empty keepalive commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: keepalive"
+          git push

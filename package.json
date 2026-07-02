@@ -1,0 +1,14 @@
+{
+  "name": "keka-attendance",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Automated Keka clock-in/clock-out via Playwright + GitHub Actions",
+  "scripts": {
+    "clock-in": "node clock-in.js",
+    "clock-out": "node clock-out.js"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}
