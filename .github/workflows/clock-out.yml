@@ -2,9 +2,9 @@ name: Clock Out
 
 on:
   schedule:
-    # 13:07 UTC = 06:37 PM IST, Monday to Friday
+    # 14:07 UTC = 07:37 PM IST, Monday to Friday
     # (odd minute chosen to avoid GitHub's busy top-of-hour queue delays)
-    - cron: "7 13 * * 1-5"
+    - cron: "7 14 * * 1-5"
   workflow_dispatch: # allows manual runs from the Actions tab for testing
 
 jobs:
