@@ -4,7 +4,7 @@ Automated clock-in and clock-out on Keka (via Microsoft SSO login) using Playwri
 
 ## How it works
 
-- `clock-in.js` runs Monday–Friday at ~9:23 AM IST (plus 0–7 min random jitter)
+- `clock-in.js` runs Monday–Friday at ~8:47 AM IST (plus 0–7 min random jitter)
 - `clock-out.js` runs Monday–Friday at ~7:37 PM IST (plus 0–7 min random jitter)
 - `keepalive.yml` makes an empty commit every 45 days so GitHub doesn't auto-disable the schedules after 60 days of repo inactivity
 
