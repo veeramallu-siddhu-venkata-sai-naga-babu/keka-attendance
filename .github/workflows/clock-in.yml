@@ -2,9 +2,9 @@ name: Clock In
 
 on:
   schedule:
-    # 03:17 UTC = 08:47 AM IST, Monday to Friday
+    # 02:07 UTC = 07:37 AM IST, Monday to Friday
     # (odd minute chosen to avoid GitHub's busy top-of-hour queue delays)
-    - cron: "17 3 * * 1-5"
+    - cron: "7 2 * * 1-5"
   workflow_dispatch: # allows manual runs from the Actions tab for testing
 
 jobs:
